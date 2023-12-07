@@ -6,6 +6,6 @@ const questionRouter = require('./questions.routers');
 
 router.use('/', mainRouter);
 router.use('/category', categoryRouter);
-router.use('/category/question', questionRouter);
+router.use('/category/*/question', questionRouter);
 
 module.exports = router;

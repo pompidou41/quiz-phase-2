@@ -5,7 +5,13 @@ function CategoryPage({ question }) {
   return (
     <Layout>
       <div>{question.text}</div>
-      <a href={`/category/${question.id}`}>asdasdas</a>
+      <a
+        href={`/category/${question.themeQuestionId}/question/${
+          question.id + 1
+        }`}
+      >
+        next
+      </a>
     </Layout>
   );
 }
