@@ -11,6 +11,20 @@ module.exports = {
           createdAt: new Date(),
           updatedAt: new Date(),
         },
+        {
+          text: 'Какой год сейчас?',
+          answer: '2023',
+          themeQuestionId: 1,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          text: 'Какой год сейчас?',
+          answer: '2023',
+          themeQuestionId: 1,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
       ],
       {}
     );
