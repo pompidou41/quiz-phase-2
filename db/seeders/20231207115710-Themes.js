@@ -5,6 +5,11 @@ module.exports = {
       'Themes',
       [
         {
+          title: 'Elbrus',
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
           title: 'Animals',
           createdAt: new Date(),
           updatedAt: new Date(),
