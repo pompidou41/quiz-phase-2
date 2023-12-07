@@ -24,6 +24,14 @@ module.exports = {
         },
         onDelete: 'cascade',
       },
+      ques_img: {
+        allowNull: true,
+        type: Sequelize.TEXT,
+      },
+      ans_img: {
+        allowNull: true,
+        type: Sequelize.TEXT,
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,

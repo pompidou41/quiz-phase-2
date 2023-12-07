@@ -10,7 +10,7 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          title: 'Animals',
+          title: 'Угадай студента',
           createdAt: new Date(),
           updatedAt: new Date(),
         },

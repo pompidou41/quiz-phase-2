@@ -24,6 +24,14 @@ module.exports = (sequelize, DataTypes) => {
         },
         onDelete: 'cascade',
       },
+      ques_img: {
+        allowNull: true,
+        type: DataTypes.TEXT,
+      },
+      ans_img: {
+        allowNull: true,
+        type: DataTypes.TEXT,
+      },
     },
     {
       sequelize,

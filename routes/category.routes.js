@@ -1,9 +1,7 @@
 const router = require('express').Router();
 const CategoryPage = require('../components/CategoryPage');
 const QuestionOne = require('../components/QuestionOne');
-const { Question } = require('../db/models');
-
-const { Theme } = require('../db/models');
+const { Question, Theme } = require('../db/models');
 
 router.get('/', async (req, res) => {
   const categories = await Theme.findAll();
