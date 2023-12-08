@@ -32,6 +32,18 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: true,
         type: DataTypes.TEXT,
       },
+      wrong1: {
+        allowNull: true,
+        type: DataTypes.TEXT,
+      },
+      wrong2: {
+        allowNull: true,
+        type: DataTypes.TEXT,
+      },
+      wrong3: {
+        allowNull: true,
+        type: DataTypes.TEXT,
+      },
     },
     {
       sequelize,

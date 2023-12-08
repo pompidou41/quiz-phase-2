@@ -32,6 +32,18 @@ module.exports = {
         allowNull: true,
         type: Sequelize.TEXT,
       },
+      wrong1: {
+        allowNull: true,
+        type: Sequelize.TEXT,
+      },
+      wrong2: {
+        allowNull: true,
+        type: Sequelize.TEXT,
+      },
+      wrong3: {
+        allowNull: true,
+        type: Sequelize.TEXT,
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,

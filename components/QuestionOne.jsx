@@ -11,6 +11,22 @@ function QuestionOne({ question, catid }) {
               <img src={question.ques_img} alt="" />
             </div>
             <p>{question.text}</p>
+            <div className="answers-div">
+              <form className="answer-form">
+                <input type="text" name="answer" />
+                <button type="submit">Ответить</button>
+              </form>
+              {/* <form className="radios">
+                <input type="radio" name="answer" id={question.ans} />
+                <label htmlFor="answer">answer1</label>
+                <input type="radio" name="answer" id="2" />
+                <label htmlFor="answer">answer2</label>
+                <input type="radio" name="answer" id="3" />
+                <label htmlFor="answer">answer3</label>
+                <input type="radio" name="answer" id="4" />
+                <label htmlFor="answer">answer4</label>
+              </form> */}
+            </div>
           </div>
         </div>
         <div className="next">
