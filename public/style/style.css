@@ -1,6 +1,6 @@
 * {
-  margin: 7px;
-  margin-left: 10px;
+  /* margin: 7px;
+  margin-left: 10px; */
 }
 .a1 {
   text-decoration: none;
@@ -40,4 +40,25 @@
   background-color: black;
   color: white;
   width: 110px;
+}
+
+.xmas {
+  position: relative;
+  background-image: url(/img/garland.gif);
+  background-size:contain;
+  /* transform: scaleX(-1); */
+  height: 10vh;
+  margin-bottom: 100px;
+}
+
+.xmas::after{
+  content: '';
+  position: absolute;
+  background-image: inherit;
+  background-repeat: inherit;
+  transform: scaleX(-1);
+}
+
+.navbar{
+  border-bottom: 2px solid lightslategray;
 }
