@@ -30,4 +30,7 @@ router.get('/:catid/question/:id', async (req, res) => {
   }
 });
 
+router.post('/:catid/question/:id?', async (req, res) => {
+  const { id, catid } = req.params;
+});
 module.exports = router;
