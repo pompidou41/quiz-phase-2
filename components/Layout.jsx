@@ -1,7 +1,7 @@
 const React = require('react');
 const NavBar = require('./NavBar');
 
-function Layout({ title, children }) {
+function Layout({ title, children, user }) {
   return (
     <html lang="ru">
       <head>
@@ -12,7 +12,7 @@ function Layout({ title, children }) {
           crossOrigin="anonymous"
         />
         {/* <script defer src="/scripts/addUsers.js" /> */}
-        {/* <script defer src="/scripts/deleteUsers.js" /> */}
+        <script defer src="/script/regScript.js" />
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
           rel="stylesheet"
@@ -21,7 +21,7 @@ function Layout({ title, children }) {
         />
         <link rel="stylesheet" href="/style/style.css" />
       </head>
-      <NavBar />
+      <NavBar user={user} />
       <body>{children}</body>
     </html>
   );

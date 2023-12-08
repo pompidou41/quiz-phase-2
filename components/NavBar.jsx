@@ -1,7 +1,8 @@
 const React = require('react');
 const Layout = require('./Layout');
 
-function NavBar() {
+function NavBar({ user }) {
+  console.log(user, 32);
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
@@ -18,6 +19,11 @@ function NavBar() {
             <li className="nav-item">
               <a className="nav-link" href="/category">
                 Категории
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/category">
+                {user && user.name}
               </a>
             </li>
           </ul>
