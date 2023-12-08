@@ -1,6 +1,7 @@
 body {
   background-image: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1613676167_60-p-fon-dlya-novogodnei-prezentatsii-dlya-dete-73.jpg);
   background-repeat: no-repeat;
+
 }
 .a1 {
   text-decoration: none;
@@ -46,6 +47,18 @@ body {
   width: 110px;
 }
 
+
+.xmas {
+  position: relative;
+  background-image: url(/img/garland.gif);
+  background-size:contain;
+  /* transform: scaleX(-1); */
+  height: 10vh;
+  margin-bottom: 100px;
+}
+.navbar{
+  border-bottom: 2px solid lightslategray;
+}
 .containerForCategories {
   display: flex;
   justify-content: center;
@@ -56,3 +69,4 @@ body {
 .card-img-top {
   border-radius: 10px 10px 0 0;
 }
+
