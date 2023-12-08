@@ -1,7 +1,6 @@
 body {
   background-image: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1613676167_60-p-fon-dlya-novogodnei-prezentatsii-dlya-dete-73.jpg);
   background-repeat: no-repeat;
-
 }
 .a1 {
   text-decoration: none;
@@ -12,9 +11,8 @@ body {
 .question-card {
   display: flex;
   justify-content: center;
+  /* background-color: wheat; */
   margin-top: 10vh;
-  border: 3px solid black;
-  width: 350px;
 }
 
 .question-img {
@@ -22,14 +20,16 @@ body {
   height: 300px;
 }
 
-.body-card .next {
-  margin-left: 100px;
+.body-card, .next {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  background-color: beige;
+  width: 300px;
 }
 .reg {
   width: 180vh;
-  height: 100vh;
+  height: 50vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -52,7 +52,6 @@ body {
   position: relative;
   background-image: url(https://iforum-ru.c.hihonor.com/ru_data/images/10000/2022/12/30/1ee119f9-5f03-410f-8d49-8438ff058932.gif);
   background-size:contain;
-  /* transform: scaleX(-1); */
   height: 10vh;
   margin-bottom: 100px;
 }
@@ -70,3 +69,11 @@ body {
   border-radius: 10px 10px 0 0;
 }
 
+.question{
+  display: flex;
+  flex-direction: column;
+}
+
+.next{
+  flex-direction: row !important;
+}
