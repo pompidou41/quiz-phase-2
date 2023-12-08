@@ -1,6 +1,7 @@
 body {
   background-image: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1613676167_60-p-fon-dlya-novogodnei-prezentatsii-dlya-dete-73.jpg);
   background-repeat: no-repeat;
+  
 }
 .a1 {
   text-decoration: none;
@@ -104,4 +105,9 @@ body {
 }
 .question-img {
   margin-right: 100px;
+}
+.nt {
+  background-image: url(https://i.pinimg.com/originals/18/ca/12/18ca120ad98fd2b790d5bb6f03336baf.gif);
+  background-size: cover;
+  margin: ;
 }
