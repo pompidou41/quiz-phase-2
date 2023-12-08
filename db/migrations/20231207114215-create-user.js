@@ -11,6 +11,10 @@ module.exports = {
       name: {
         type: Sequelize.TEXT,
       },
+      score: {
+        defaultValue: 0,
+        type: Sequelize.INTEGER,
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,

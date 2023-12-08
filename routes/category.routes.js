@@ -35,9 +35,14 @@ router.post('/:catid/question/:id', async (req, res) => {
   const { catid, id } = req.params;
   const { answer } = req.body;
   const question = await Question.findOne({ where: { id } });
+  const { user } = res.app.locals;
   if (answer.trim().toLowerCase() === question.answer.toLowerCase()) {
+    user.score += 100;
     res.json({ success: true, message: 'верно' });
   } else {
+    if (user.score > 0) {
+      user.score -= 100;
+    }
     res.json({
       success: false,
       message: `неверно, правильный ответ: ${question.answer}`,

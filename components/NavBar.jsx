@@ -27,7 +27,9 @@ function NavBar({ user }) {
                 <></>
               )}
               <li className="nav-item">
-                <a className="nav-link">{user && `Привет, ${user.name}`}</a>
+                <a className="nav-link">
+                  {user && `Привет, ${user.name}. У тебя ${user.score} очков`}
+                </a>
               </li>
             </ul>
           </div>
