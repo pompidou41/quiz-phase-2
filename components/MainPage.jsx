@@ -4,7 +4,14 @@ const Layout = require('./Layout');
 function MainPage() {
   return (
     <Layout>
-      <div>mainpage</div>
+      <div className="reg">
+        <form className="regform">
+          <input className="input1" type="text" name="name" placeholder="имя" />
+          <button className="butnReg" type="submit">
+            ввввв
+          </button>
+        </form>
+      </div>
     </Layout>
   );
 }

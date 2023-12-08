@@ -2,9 +2,9 @@ const React = require('react');
 const Layout = require('./Layout');
 const CategoryOne = require('./CategoryOne');
 
-function CategoryPage({ categories }) {
+function CategoryPage({ categories, user }) {
   return (
-    <Layout>
+    <Layout user={user}>
       <div>
         {categories.map((category) => (
           <CategoryOne category={category} />

@@ -1,5 +1,6 @@
 * {
-  /* margin: 15px; */
+  margin: 7px;
+  margin-left: 10px;
 }
 .a1 {
   text-decoration: none;
@@ -7,7 +8,7 @@
   justify-content: space-between;
 }
 
-.question-card{
+.question-card {
   display: flex;
   justify-content: center;
   margin-top: 10vh;
@@ -15,10 +16,28 @@
   width: 350px;
 }
 
-.question-img{
+.question-img {
   width: 300px;
   height: 300px;
-
 }
 
-.body-card
+.body-card .next {
+  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+}
+.reg {
+  display: flex;
+  justify-content: center;
+}
+.input1 {
+  color: gray;
+  border-radius: 8px;
+  width: 300px;
+}
+.butnReg {
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  width: 110px;
+}
