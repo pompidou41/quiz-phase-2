@@ -5,7 +5,7 @@ const CategoryOne = require('./CategoryOne');
 function CategoryPage({ categories, user }) {
   return (
     <Layout user={user}>
-      <div>
+      <div className='containerForCategories'>
         {categories.map((category) => (
           <CategoryOne category={category} />
         ))}
