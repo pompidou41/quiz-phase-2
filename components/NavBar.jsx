@@ -2,7 +2,7 @@ const React = require('react');
 const Layout = require('./Layout');
 
 function NavBar({ user }) {
-  console.log(user, 32);
+  console.log(user);
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">

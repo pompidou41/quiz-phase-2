@@ -11,12 +11,13 @@ router.get('/', (req, res) => {
 router.post('/', async (req, res) => {
   try {
     const { name } = req.body;
+    console.log(name);
     if (name.trim() === '') {
       res.json({ success: false, message: 'Заполните поля' });
     } else {
       const newUser = await User.create({ name });
-      console.log(newUser);
       res.app.locals.user = newUser;
+      console.log(res.app.locals.user);
       res.json({
         success: true,
         message: `Пользователь ${newUser.name} зарегистрирован `,
