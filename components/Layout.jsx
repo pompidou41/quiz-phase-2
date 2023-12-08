@@ -13,6 +13,7 @@ function Layout({ title, children, user }) {
         />
         <script defer src="/script/answerScript.js" />
         <script defer src="/script/regScript.js" />
+        <script defer src="/script/answerScript.js" />
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
           rel="stylesheet"

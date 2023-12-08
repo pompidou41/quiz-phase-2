@@ -10,7 +10,15 @@ function QuestionOne({ question, catid }) {
             <div className="question-img">
               <img src={question.ques_img} alt="" style={{ height: '400px' }} />
             </div>
+
             <p className="p1">{question.text}</p>
+            <div className="answers-div">
+              <form className="answer-form">
+                <input type="text" name="answer" />
+                <button type="submit">Ответить</button>
+              </form>
+            </div>
+
           </div>
         </div>
         <div className="next">
