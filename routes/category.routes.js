@@ -22,15 +22,26 @@ router.get('/:catid', async (req, res) => {
 router.get('/:catid/question/:id', async (req, res) => {
   const { id, catid } = req.params;
   const question = await Question.findOne({ where: { id } });
+  const { user } = res.app.locals;
   if (question && question.themeQuestionId === Number(catid)) {
-    const html = res.renderComponent(QuestionOne, { question, catid });
+    const html = res.renderComponent(QuestionOne, { question, catid, user });
     res.send(html);
   } else {
     res.redirect('/category');
   }
 });
 
-router.post('/:catid/question/:id?', async (req, res) => {
-  const { id, catid } = req.params;
+router.post('/:catid/question/:id', async (req, res) => {
+  const { catid, id } = req.params;
+  const { answer } = req.body;
+  const question = await Question.findOne({ where: { id } });
+  if (answer.trim().toLowerCase() === question.answer.toLowerCase()) {
+    res.json({ success: true, message: 'верно' });
+  } else {
+    res.json({
+      success: false,
+      message: `неверно, правильный ответ: ${question.answer}`,
+    });
+  }
 });
 module.exports = router;

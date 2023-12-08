@@ -1,10 +1,10 @@
 const React = require('react');
 const Layout = require('./Layout');
 
-function QuestionOne({ question, catid }) {
+function QuestionOne({ question, catid, user }) {
   return (
-    <Layout>
-      <div className="question">
+    <Layout user={user}>
+      <div className="question" data-catid={catid} data-id={question.id}>
         <div className="question-card">
           <div className="body-card">
             <div className="question-img">
@@ -18,7 +18,7 @@ function QuestionOne({ question, catid }) {
                 <button type="submit">Ответить</button>
               </form>
             </div>
-
+            <div className="feedback"></div>
           </div>
         </div>
         <div className="next">
