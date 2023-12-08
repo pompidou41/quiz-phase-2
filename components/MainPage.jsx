@@ -8,7 +8,7 @@ function MainPage() {
         <form className="regform">
           <input className="input1" type="text" name="name" placeholder="имя" />
           <button className="butnReg" type="submit">
-            ввввв
+            играть
           </button>
         </form>
       </div>

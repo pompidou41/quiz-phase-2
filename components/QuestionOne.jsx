@@ -8,33 +8,25 @@ function QuestionOne({ question, catid }) {
         <div className="question-card">
           <div className="body-card">
             <div className="question-img">
-              <img src={question.ques_img} alt="" />
+              <img src={question.ques_img} alt="" style={{ height: '400px' }} />
             </div>
-            <p>{question.text}</p>
+
+            <p className="p1">{question.text}</p>
             <div className="answers-div">
               <form className="answer-form">
                 <input type="text" name="answer" />
                 <button type="submit">Ответить</button>
               </form>
-              {/* <form className="radios">
-                <input type="radio" name="answer" id={question.ans} />
-                <label htmlFor="answer">answer1</label>
-                <input type="radio" name="answer" id="2" />
-                <label htmlFor="answer">answer2</label>
-                <input type="radio" name="answer" id="3" />
-                <label htmlFor="answer">answer3</label>
-                <input type="radio" name="answer" id="4" />
-                <label htmlFor="answer">answer4</label>
-              </form> */}
             </div>
+
           </div>
         </div>
         <div className="next">
           <a
-            className="a1"
+            className="a2"
             href={`/category/${catid}/question/${question.id + 1}`}
           >
-            next
+            {'->'}
           </a>
         </div>
       </div>
