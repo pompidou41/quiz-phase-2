@@ -3,10 +3,27 @@ const Layout = require('./Layout');
 
 function NavBar() {
   return (
-    <div>
-      <a href="/">Главная</a>
-      <a href="/category">Ккатегории вопросов</a>
-    </div>
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <div className="container-fluid">
+        <a className="navbar-brand" href="/">
+          quiz
+        </a>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <a className="nav-link" aria-current="page" href="/">
+                Главная
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/category">
+                Категории
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   );
 }
 

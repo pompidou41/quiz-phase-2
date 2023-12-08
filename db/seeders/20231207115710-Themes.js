@@ -5,12 +5,14 @@ module.exports = {
       'Themes',
       [
         {
-          title: 'Elbrus',
+          title: 'Elbrus Bootcamp',
+          img: '/img/elbrus.png',
           createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
           title: 'Угадай студента',
+          img: '/img/student.jpg',
           createdAt: new Date(),
           updatedAt: new Date(),
         },
