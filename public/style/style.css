@@ -102,3 +102,6 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.question-img {
+  margin-right: 100px;
+}
