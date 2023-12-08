@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
 router.post('/', async (req, res) => {
   try {
     const { name } = req.body;
-    if (name === '') {
+    if (name.trim() === '') {
       res.json({ success: false, message: 'Заполните поля' });
     } else {
       const newUser = await User.create({ name });

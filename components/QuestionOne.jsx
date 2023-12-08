@@ -8,17 +8,17 @@ function QuestionOne({ question, catid }) {
         <div className="question-card">
           <div className="body-card">
             <div className="question-img">
-              <img src={question.ques_img} alt="" />
+              <img src={question.ques_img} alt="" style={{ height: '400px' }} />
             </div>
-            <p>{question.text}</p>
+            <p className="p1">{question.text}</p>
           </div>
         </div>
         <div className="next">
           <a
-            className="a1"
+            className="a2"
             href={`/category/${catid}/question/${question.id + 1}`}
           >
-            next
+            {'->'}
           </a>
         </div>
       </div>

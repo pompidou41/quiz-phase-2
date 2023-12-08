@@ -11,7 +11,7 @@ function Layout({ title, children, user }) {
           integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
           crossOrigin="anonymous"
         />
-        {/* <script defer src="/scripts/addUsers.js" /> */}
+        <script defer src="/script/answerScript.js" />
         <script defer src="/script/regScript.js" />
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"

@@ -17,15 +17,17 @@ function NavBar({ user }) {
                   Главная
                 </a>
               </li>
+              {user ? (
+                <li className="nav-item">
+                  <a className="nav-link" href="/category">
+                    Категории
+                  </a>
+                </li>
+              ) : (
+                <></>
+              )}
               <li className="nav-item">
-                <a className="nav-link" href="/category">
-                  Категории
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/category">
-                  {user && user.name}
-                </a>
+                <a className="nav-link">{user && `Привет, ${user.name}`}</a>
               </li>
             </ul>
           </div>
