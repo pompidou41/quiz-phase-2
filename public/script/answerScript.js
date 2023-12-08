@@ -5,15 +5,20 @@ if (answerForm) {
     answerForm.addEventListener('submit', async (e) => {
       e.preventDefault();
       const { answer } = e.target;
-      console.log(answer);
-      const response = await fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ answer: answer.value }),
-      });
+      const card = e.target.closest('.question');
+      const response = await fetch(
+        `/category/${card.dataset.catid}/question/${card.dataset.id}`,
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ answer: answer.value }),
+        }
+      );
       const data = await response.json();
       if (data.success) {
-        window.location.href = '/category';
+        document.querySelector('.feedback').innerHTML = data.message;
+      } else {
+        document.querySelector('.feedback').innerHTML = data.message;
       }
     });
   } catch ({ message }) {
