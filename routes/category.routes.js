@@ -38,11 +38,14 @@ router.post('/:catid/question/:id', async (req, res) => {
   const { user } = res.app.locals;
   if (answer.trim().toLowerCase() === question.answer.toLowerCase()) {
     user.score += 100;
+    await user.save();
     res.json({ success: true, message: 'верно' });
   } else {
     if (user.score > 0) {
       user.score -= 100;
     }
+    await user.save();
+    res.app.locals.user.score = user.score;
     res.json({
       success: false,
       message: `неверно, правильный ответ: ${question.answer}`,
